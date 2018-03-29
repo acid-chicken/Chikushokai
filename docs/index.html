@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#bf0101">
+<meta name="description" content="ポプテピピックを揃えて竹生会を爆破するやつ">
+<meta name="ICBM" content="35.699099, 139.74944">
+<meta name="geo.position" content="35.699099;139.74944">
+<meta name="geo.region" content="Japan">
+<meta name="geo.placename" content="Tokyo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@acid_chicken">
+<meta name="twitter:creator" content="@acid_chicken">
+<meta property="og:url" content="https://www.acid-chicken.com/chikushokai">
+<meta property="og:title" content="サブカルクソセマンティックヘルシェイク指定暴力団竹生会">
+<meta property="og:image" content="http://www.acid-chicken.com/logo.png">
+<title>サブカルクソセマンティックヘルシェイク指定暴力団竹生会</title>
+<base target="_blank">
+<link rel="me" href="https://twitter.com/acid_chicken">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css" integrity="sha256-oDCP2dNW17Y1QhBwQ+u2kLaKxoauWvIGks3a4as9QKs=" crossorigin="anonymous">
+<script src="https://magicant.github.io/sjavascript/mt.js"></script>
+<style>main{overflow:hidden}h1{margin:1em 0 !important}.blue.colored{color:#0046a0 !important}.red.colored{color:#e6190f !important}#output{line-break:auto}#wrapper{overflow-y:scroll}</style>
+<main class="ui container">
+  <h1 class="ui center aligned header">サブカルクソセマンティックヘルシェイク指定暴力団竹生会</h1>
+  <div class="ui horizontal list">
+    <div class="item">
+      <a href="https://github.com/acid-chicken" class="ui mini circular image">
+        <img src="https://github.com/acid-chicken.png" alt="acid-chicken">
+      </a>
+      <div class="content">
+        <a href="https://github.com/acid-chicken/chikushokai" class="ui sub header">chikushokai</a>
+        <span>via</span>
+        <a href="https://github.com/acid-chicken">Acid Chicken</a>
+        <span>(created)</span>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://github.com/salty-7" class="ui mini circular image">
+        <img src="https://github.com/salty-7.png" alt="salty-7">
+      </a>
+      <div class="content">
+        <a href="https://github.com/salty-7/gen_pptp" class="ui sub header">gen_pptp</a>
+        <span>via</span>
+        <a href="https://github.com/salty-7">salty_7</a>
+        <span>(inspired)</span>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://github.com/Semantic-Org" class="ui mini circular image">
+        <img src="https://github.com/Semantic-Org.png" alt="semantic-org">
+      </a>
+      <div class="content">
+        <a href="https://github.com/Semantic-Org/Semantic-UI" class="ui sub header">Semantic UI</a>
+        <span>via</span>
+        <a href="https://github.com/Semantic-Org">Semantic Org</a>
+        <span>(referenced)</span>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://github.com/google" class="ui mini circular image">
+        <img src="https://github.com/google.png" alt="fontawesome">
+      </a>
+      <div class="content">
+        <a href="https://github.com/google/fonts" class="ui sub header">Google Fonts Files</a>
+        <span>via</span>
+        <a href="https://github.com/google">Google</a>
+        <span>(referenced)</span>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://github.com/FortAwesome" class="ui mini circular image">
+        <img src="https://github.com/FortAwesome.png" alt="fontawesome">
+      </a>
+      <div class="content">
+        <a href="https://github.com/FortAwesome/Font-Awesome" class="ui sub header">Font Awesome</a>
+        <span>via</span>
+        <a href="https://github.com/FortAwesome">Fort Awesome</a>
+        <span>(referenced)</span>
+      </div>
+    </div>
+    <div class="item">
+      <a href="https://github.com/magicant" class="ui mini circular image">
+        <img src="https://github.com/magicant.png" alt="magicant">
+      </a>
+      <div class="content">
+        <a href="https://github.com/magicant/magicant.github.io" class="ui sub header">mt.js</a>
+        <span>via</span>
+        <a href="https://github.com/magicant">WATANABE Yuki</a>
+        <span>(referenced)</span>
+      </div>
+    </div>
+  </div>
+  <div class="ui grid">
+    <div class="stretched row">
+      <div class="twelve wide column" id="terminal">
+        <div class="ui inverted segment" id="wrapper">
+          <samp id="output"></samp>
+        </div>
+      </div>
+      <div class="four wide column" id="side">
+        <h2>カウント</h2>
+        <div class="ui horizontal statistics" id="statistics"></div>
+        <div class="ui fluid segments">
+          <div class="ui fluid segment">
+            <h3 class="ui header">総文字数</h3>
+            <span id="rendered-counter">0</span>
+          </div>
+          <div class="ui fluid segment">
+            <h3 class="ui header">経過時間</h3>
+            <span id="elapsed-counter">00.000</span>
+          </div>
+        </div>
+        <button class="ui fluid twitter button" id="share">
+          <i class="twitter icon"></i>
+          <span>Share</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+Notification.requestPermission()
+const mersenneTwister = new MersenneTwister()
+const popTeamEpic = [ 'ポ', 'プ', 'テ', 'ピ', 'ピ', 'ッ', 'ク' ]
+const hellShake = action => popTeamEpic.reduce((prev, x, i) => {
+  const target = `${prev}${x}`
+  action(target, i)
+  return target
+}, '')
+const statistics = document.getElementById('statistics')
+hellShake((target, i) => statistics.innerHTML += `<div class="${i % 2 ? 'blue' : 'red'} statistic"><div class="value" id="${target}">0</div><div class="label">${target}</div></div>`)
+let containers = {}
+hellShake(target => containers[target] = document.getElementById(target))
+document.getElementById('share').addEventListener('click', e => {
+  let message = 'https://twitter.com/share?text=%E3%82%B5%E3%83%96%E3%82%AB%E3%83%AB%E3%82%AF%E3%82%BD%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%98%E3%83%AB%E3%82%B7%E3%82%A7%E3%82%A4%E3%82%AF%E6%8C%87%E5%AE%9A%E6%9A%B4%E5%8A%9B%E5%9B%A3%E7%AB%B9%E7%94%9F%E4%BC%9A%E3%81%A7%0A'
+  hellShake(target => {
+    message += `${encodeURIComponent(target)}%E3%82%92${containers[target].innerText}%E5%80%8B%0A`
+  })
+  message += '%E7%99%BA%E8%A6%8B%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82&url=https%3A%2F%2Fwww.acid-chicken.com%2Fchikushokai&hashtags=%E3%82%B5%E3%83%96%E3%82%AB%E3%83%AB%E3%82%AF%E3%82%BD%E3%82%BB%E3%83%9E%E3%83%B3%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%98%E3%83%AB%E3%82%B7%E3%82%A7%E3%82%A4%E3%82%AF%E6%8C%87%E5%AE%9A%E6%9A%B4%E5%8A%9B%E5%9B%A3%E7%AB%B9%E7%94%9F%E4%BC%9A&via=acid_chicken'
+  window.open(message)
+})
+const terminal = document.getElementById('terminal')
+const side = document.getElementById('side')
+const wrapper = document.getElementById('wrapper')
+const output = document.getElementById('output')
+const renderedCounter = document.getElementById('rendered-counter')
+const elapsedCounter = document.getElementById('elapsed-counter')
+const countChar = (source, target) => source.split(target).length - 1
+let rendered = 0
+let completed = 0
+const started = new Date().getTime()
+const render = () => {
+  const elapsed = new Date().getTime() - started
+  output.innerText += popTeamEpic[mersenneTwister.nextInt(0, popTeamEpic.length)]
+  renderedCounter.innerText = ++rendered
+  let sub = 0
+  const days = Math.floor(elapsed / 86400000)
+  const hours = Math.floor((elapsed - (sub += 86400000 * days)) / 3600000)
+  const minutes = Math.floor((elapsed - (sub += 3600000 * hours)) / 60000)
+  const seconds = Math.floor((elapsed - (sub += 60000 * minutes)) / 1000)
+  const milliseconds = Math.floor(elapsed - (sub += 1000 * seconds))
+  elapsedCounter.innerText = `${days ? `${days}:` : ''}${days || hours ? `${hours.toString().padStart(2, '0')}:` : ''}${days || hours || minutes ? `${minutes.toString().padStart(2, '0')}:` : ''}${seconds.toString().padStart(2, '0')}.${milliseconds.toString().padStart(3, '0')}`
+  terminal.style.maxHeight = `${side.offsetHeight}px`
+  const text = output.innerText
+  if (parseInt(containers[hellShake(target => {
+    const count = countChar(text, target)
+    containers[target].innerText = count
+    wrapper.scroll(0, output.offsetHeight)
+  })].innerText) - completed) {
+    new Notification('サブカルクソセマンティックヘルシェイク指定暴力団竹生会', { body: `ポプテピピックが完成しました。${++completed}回目です。` })
+  }
+  requestAnimationFrame(render)
+}
+requestAnimationFrame(render)
+</script>
